@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Third Assignment</title>
+    <!-- google Manrope font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- tailwind and daisyui  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,9 +29,14 @@
             }
         }
     </script>
+    <style>
+        .font-man {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="font-man">
     <header class="px-4 lg:px-28 mb-10 lg:mb-24">
         <nav class="mb-6">
             <div class="navbar bg-base-100">
@@ -48,7 +58,7 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl">Hockey<span class="text-btnred">'</span>s</a>
+                    <a class="btn btn-ghost text-3xl font-extrabold">Hockey's</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -60,7 +70,7 @@
                     </ul>
                 </div>
                 <div class="navbar-end gap-1 lg:gap-4">
-                    <i class=" fa-solid fa-magnifying-glass text-[#89898B]"></i>
+                    <i class="invisible lg:visible fa-solid fa-magnifying-glass text-[#89898B]"></i>
                     <a class="btn bg-btnred text-white">Get Ticket</a>
                 </div>
             </div>
@@ -111,8 +121,9 @@
             <div class="grid gap-4 grid-cols-1 lg:gap-6 lg:grid-cols-4">
                 <!-- Prayer Facility -->
                 <div class="text-center space-y-2">
-                    <div class="radial-progress text-btnred" style="--value:87;" role="progressbar"><span
-                            class="text-black text-2xl font-extrabold text-center">87%</span></div>
+                    <div class="radial-progress text-btnred" style="--value:87;" role="progressbar">
+                        <span class="text-black text-2xl font-extrabold text-center">87%</span>
+                    </div>
 
                     <h2 class="font-semibold text-xl">Prayer Facility</h2>
                     <p class="font-normal text-pgray">Every Muslim is expected to pray five times a day.</p>
@@ -602,22 +613,22 @@
             </div>
 
         </aside>
-     <div class="grid grid-cols-2 lg:grid-cols-2 gap-12 lg:gap-32 m-auto">
-        <nav>
-            <header class="font-bold text-xl">Company</header>
-            <a class="text-[#FFFFFF99] block">About us</a>
-            <a class="text-[#FFFFFF99] block">Leadership</a>
-            <a class="text-[#FFFFFF99] block">Careers</a>
-            <a class="text-[#FFFFFF99] block">News & Article</a>
-            <a class="text-[#FFFFFF99] block">Legal Notice</a>
-        </nav>
-        <nav>
-            <header class="font-bold text-xl">Support</header>
-            <a class="text-[#FFFFFF99] block">FAQ</a>
-            <a class="text-[#FFFFFF99] block">Ticket Support</a>
-            <a class="text-[#FFFFFF99] block">Contact Us</a>
-        </nav>
-     </div>
+        <div class="grid grid-cols-2 lg:grid-cols-2 gap-12 lg:gap-32 m-auto">
+            <nav>
+                <header class="font-bold text-xl">Company</header>
+                <a class="text-[#FFFFFF99] block">About us</a>
+                <a class="text-[#FFFFFF99] block">Leadership</a>
+                <a class="text-[#FFFFFF99] block">Careers</a>
+                <a class="text-[#FFFFFF99] block">News & Article</a>
+                <a class="text-[#FFFFFF99] block">Legal Notice</a>
+            </nav>
+            <nav>
+                <header class="font-bold text-xl">Support</header>
+                <a class="text-[#FFFFFF99] block">FAQ</a>
+                <a class="text-[#FFFFFF99] block">Ticket Support</a>
+                <a class="text-[#FFFFFF99] block">Contact Us</a>
+            </nav>
+        </div>
         <nav class="m-auto">
             <header class="font-bold text-xl">Services</header>
             <a class="text-[#FFFFFF99]">Academy</a>
